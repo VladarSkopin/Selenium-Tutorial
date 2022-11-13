@@ -24,7 +24,6 @@ public class Main {
         WebElement element = (new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.presenceOfElementLocated(By.id("123"))));
 
-
         driver.get("https://google.com");
 
 
