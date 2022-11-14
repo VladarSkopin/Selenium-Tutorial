@@ -12,7 +12,8 @@ public class SeleniumTest_1 {
         System.setProperty("webdriver.chrome.driver", "D:\\SeleniumProjectsQA\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        driver.manage().window().maximize();
 
         System.out.println("Going to -> https://www.avito.ru/rossiya/avtomobili");
         driver.get("https://www.avito.ru/rossiya/avtomobili");
@@ -39,6 +40,8 @@ public class SeleniumTest_1 {
 
         System.out.println("Going to -> https://www.avito.ru/");
         driver.get("https://www.avito.ru/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        System.out.println("https://www.avito.ru/ is opened!");
 
         WebElement elementLink = driver.findElement(By.xpath("//a[text()='Одежда, обувь и аксессуары']"));
         String parLink = elementLink.getAttribute("href");
@@ -68,6 +71,7 @@ public class SeleniumTest_1 {
         System.out.println("Click on //option[@value='24']");
         elementOption.click();
 
-
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // DOESN'T WAIT.... WHY ???
+        driver.quit();
     }
 }

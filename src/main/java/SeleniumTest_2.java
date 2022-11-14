@@ -8,6 +8,8 @@ public class SeleniumTest_2 {
         System.setProperty("webdriver.chrome.driver", "D:\\SeleniumProjectsQA\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
+        driver.manage().window().maximize();
+
         driver.get("https://www.avito.ru/");
 
         WebElement elementLink = driver.findElement(By.xpath("//a[text()='Работа']"));
