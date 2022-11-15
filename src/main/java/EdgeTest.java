@@ -15,12 +15,14 @@ public class EdgeTest {
         //driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         //driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 
-
         driver.get("https://google.com");
 
-        driver.findElement(By.name("q")).sendKeys("BrowserStack Guide");
+        driver.findElement(By.name("q")).sendKeys("KFC world map");
+        driver.findElement(By.name("q")).submit();
 
         //WebElement searchIcon = driver.findElement(By.name("btnK"));
         //searchIcon.click();
+
+
     }
 }
