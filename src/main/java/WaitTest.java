@@ -32,6 +32,7 @@ public class WaitTest {
             pagesList.get(2).click();
             // WAIT UNTIL NEW LIST IS LOADED AFTER PAGINATION
             wait.until(ExpectedConditions.stalenessOf(elementList.get(5)));
+            //wait.until(ExpectedConditions.elementToBeClickable(elementList.get(5)));
 
             // UPDATE LIST AFTER PAGINATION
             elementList = driver.findElements(By.xpath("//div[@class='data-container']/ul/li"));
@@ -45,6 +46,7 @@ public class WaitTest {
             Thread.sleep(10000);
             driver.quit();
         }
+
 
     }
 }
