@@ -1,11 +1,7 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 import java.util.Set;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.alertIsPresent;
 
 public class BrowserTabsTest {
     public static void main(String[] args) throws InterruptedException {
@@ -14,7 +10,7 @@ public class BrowserTabsTest {
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // EXPLICIT WAIT
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // EXPLICIT WAIT
 
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 
