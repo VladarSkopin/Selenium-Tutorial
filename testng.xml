@@ -6,9 +6,11 @@
 
     <test name="Test1">
         <parameter name="db" value="SQL"/>
+        <parameter name="surname" value="Skopin"/>
 
         <groups>
             <run>
+                <include name="smokeTest"/>
                 <include name="regress"/>
             </run>
         </groups>
@@ -16,6 +18,7 @@
         <classes>
             <class name="smoke.Test1"/>
             <class name="smoke.Test2"/>
+            <class name="smoke.Test3"/>
         </classes>
     </test>
 
