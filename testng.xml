@@ -19,6 +19,7 @@
             <class name="smoke.Test1"/>
             <class name="smoke.Test2"/>
             <class name="smoke.Test3"/>
+            <class name="smoke.Test4"/>
         </classes>
     </test>
 
