@@ -1,8 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import java.time.Duration;
 
 public class AssertTest {
@@ -11,7 +9,7 @@ public class AssertTest {
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // EXPLICIT WAIT
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // EXPLICIT WAIT
 
         try {
 
@@ -22,6 +20,8 @@ public class AssertTest {
             System.out.println(title);
 
             Assert.assertEquals(title, "Document");
+            //Assert.assertEquals(title, "Dogument"); // expected [Dogument] but found [Document]
+            //Assert.assertEquals(12, "Document"); // expected [Document] but found [12]
 
 
         } catch (InterruptedException e) {
