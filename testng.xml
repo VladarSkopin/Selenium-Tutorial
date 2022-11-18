@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="All Test Suite">
+
+    <test name="Test1">
+        <parameter name="db" value="SQL"/>
+
+        <groups>
+            <run>
+                <include name="regress"/>
+            </run>
+        </groups>
+        
+        <classes>
+            <class name="smoke.Test1"/>
+            <class name="smoke.Test2"/>
+        </classes>
+    </test>
+
+</suite>
