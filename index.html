@@ -13,6 +13,12 @@
                 result = prompt("I LOVE YOU KITTY!");
                 alert(result);
             }
+
+            function loginFunction() {
+                x = document.getElementById("login").value;
+                y = document.getElementById("pass").value;
+                alert('Welcome, dear ' + x + '!');
+            } 
         </script>
 
 <div>
@@ -21,6 +27,15 @@
     <a id="b" onclick="myFunc()" href="#">Link 2</a>
 
     <a id="c" onclick="confirm('I AM CONFIRM')" href="#">Link 3</a>
+</div>
+
+<div>
+    <p>Enter login, password and click LOGIN:</p>
+
+    <input id="login" type="text">
+    <input id="pass" type="text">
+
+    <button onclick="loginFunction()" id="enter">LOGIN</button>
 </div>
 
     </body>

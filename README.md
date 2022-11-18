@@ -9,3 +9,7 @@ Xpath for a link
 Xpath for list items
 ![Xpath for list items](/39.PNG?raw=true "Xpath for list items")
 
+Page-Object Design Pattern
+![Page-Object](/55.PNG?raw=true "Page-Object")
+
+
