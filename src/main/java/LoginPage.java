@@ -11,10 +11,10 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.alertIsPresent;
 // PAGE-OBJECT MODEL
 public class LoginPage {
 
-    WebDriver driver;
-    WebElement loginInput;
-    WebElement passwordInput;
-    WebElement enterBtn;
+    private final WebDriver driver;
+    private WebElement loginInput;
+    private WebElement passwordInput;
+    private WebElement enterBtn;
 
     public LoginPage() throws InterruptedException {
         driver = new ChromeDriver();
@@ -36,6 +36,7 @@ public class LoginPage {
         Thread.sleep(pacingMillisec);
         Alert alert = wait.until(alertIsPresent());
         alert.accept(); // "OK" button
+        Thread.sleep(pacingMillisec);
     }
 
     public void quitDriver() {
