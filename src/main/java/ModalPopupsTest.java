@@ -10,7 +10,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.alertIsPresent;
 public class ModalPopupsTest {
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "D:\\SeleniumProjectsQA\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
@@ -36,7 +36,7 @@ public class ModalPopupsTest {
             Thread.sleep(5000);
             prompt.sendKeys("I love you too doggy!");
             prompt.accept();
-            Thread.sleep(5000);
+            Thread.sleep(3000);
             Alert alert2 = wait.until(alertIsPresent());
             alert2.accept();
 

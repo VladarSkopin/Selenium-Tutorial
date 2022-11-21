@@ -7,7 +7,7 @@ public class CssElementsTest {
     public static void main(String[] args) {
         // TESTING CSS ELEMENTS
 
-        System.setProperty("webdriver.chrome.driver", "D:\\SeleniumProjectsQA\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://devby.io/");
